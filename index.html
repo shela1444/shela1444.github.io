@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            background: #fff;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ffe9;
+            border: 1px solid #b2ffb2;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>MCQ Solutions</h1>
+
+<div class="question" onclick="toggleAnswer('answer1')">
+    <strong>Question 1:</strong>
+    <div id="answer1" class="answer">Answer: Paris</div>
+</div>
+
+<div class="question" onclick="toggleAnswer('answer2')">
+    <strong>Question 2:</strong>
+    <div id="answer2" class="answer">Answer: 4</div>
+</div>
+
+<div class="question" onclick="toggleAnswer('answer3')">
+    <strong>Question 3:</strong>
+    <div id="answer3" class="answer">Answer: Pacific Ocean</div>
+</div>
+
+<div class="question" onclick="toggleAnswer('answer4')">
+    <strong>Question 4:</strong>
+    <div id="answer4" class="answer">Answer: William Shakespeare</div>
+</div>
+
+<div class="question" onclick="toggleAnswer('answer5')">
+    <strong>Question 5:</strong>
+    <div id="answer5" class="answer">Answer: H2O</div>
+</div>
+
+<div class="question" onclick="toggleAnswer('answer6')">
+    <strong>Question 6:</strong>
+    <div id="answer6" class="answer">Answer: Mount Everest</div>
+</div>
+
+<div class="question" onclick="toggleAnswer('answer7')">
+    <strong>Question 7:</strong>
+    <div id="answer7" class="answer">Answer: Leonardo da Vinci</div>
+</div>
+
+<div class="question" onclick="toggleAnswer('answer8')">
+    <strong>Question 8:</strong>
+    <div id="answer8" class="answer">Answer: Cheetah</div>
+</div>
+
+<div class="question" onclick="toggleAnswer('answer9')">
+    <strong>Question 9:</strong>
+    <div id="answer9" class="answer">Answer: Tokyo</div>
+</div>
+
+<div class="question" onclick="toggleAnswer('answer10')">
+    <strong>Question 10:</strong>
+    <div id="answer10" class="answer">Answer: Jupiter</div>
+</div>
+
+<div class="question" onclick="toggleAnswer('answer11')">
+    <strong>Question 11:</strong>
+    <div id="answer11" class="answer">Answer: US Dollar</div>
+</div>
+
+<div class="question" onclick="toggleAnswer('answer12')">
+    <strong>Question 12:</strong>
+    <div id="answer12" class="answer">Answer: Albert Einstein</div>
+</div>
+
+<div class="question" onclick="toggleAnswer('answer13')">
+    <strong>Question 13:</strong>
+    <div id="answer13" class="answer">Answer: 2</div>
+</div>
+
+<div class="question" onclick="toggleAnswer('answer14')">
+    <strong>Question 14:</strong>
+    <div id="answer14" class="answer">Answer: Avocado</div>
+</div>
+
+<div class="question" onclick="toggleAnswer('answer15')">
+    <strong>Question 15:</strong>
+    <div id="answer15" class="answer">Answer: Albert Einstein</div>
+</div>
+
+<script>
+    function toggleAnswer(answerId) {
+        const answer = document.getElementById(answerId);
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>
