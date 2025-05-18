@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSE MCQ Solutions - Week 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            background: #fff;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ffe9;
+            border: 1px solid #b2ffb2;
+            border-radius: 5px;
+        }
+        .back-button, .show-all-button, .unshow-all-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            text-align: center;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-button:hover, .show-all-button:hover, .unshow-all-button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<h1>BYP MCQ Solutions - Week 12 - 19 May </h1>
+
+<div class="question" onclick="handleQuestionClick(1)">
+    <strong>Question 1:</strong>
+    <div id="answer1" class="answer">Answer: </div>
+</div>
+
+<div class="question" onclick="handleQuestionClick(2)">
+    <strong>Question 2:</strong>
+    <div id="answer2" class="answer">Answer: </div>
+</div>
+
+<div class="question" onclick="handleQuestionClick(3)">
+    <strong>Question 3:</strong>
+    <div id="answer3" class="answer">Answer: </div>
+</div>
+
+<div class="question" onclick="handleQuestionClick(4)">
+    <strong>Question 4:</strong>
+    <div id="answer4" class="answer">Answer: </div>
+</div>
+
+<div class="question" onclick="handleQuestionClick(5)">
+    <strong>Question 5:</strong>
+    <div id="answer5" class="answer">Answer: </div>
+</div>
+
+<div class="question" onclick="handleQuestionClick(6)">
+    <strong>Question 6:</strong>
+    <div id="answer6" class="answer">Answer: </div>
+</div>
+
+<div class="question" onclick="handleQuestionClick(7)">
+    <strong>Question 7:</strong>
+    <div id="answer7" class="answer">Answer: </div>
+</div>
+
+<div class="question" onclick="handleQuestionClick(8)">
+    <strong>Question 8:</strong>
+    <div id="answer8" class="answer">Answer: </div>
+</div>
+
+<div class="question" onclick="handleQuestionClick(9)">
+    <strong>Question 9:</strong>
+    <div id="answer9" class="answer">Answer: </div>
+</div>
+
+<div class="question" onclick="handleQuestionClick(10)">
+    <strong>Question 10:</strong>
+    <div id="answer10" class="answer">Answer: </div>
+</div>
+
+<div class="question" onclick="handleQuestionClick(10)">
+    <strong>Question 11:</strong>
+    <div id="answer11" class="answer">Answer: </div>
+</div>
+
+<div class="question" onclick="handleQuestionClick(10)">
+    <strong>Question 12:</strong>
+    <div id="answer12" class="answer">Answer: </div>
+</div>
+
+<div class="question" onclick="handleQuestionClick(10)">
+    <strong>Question 13:</strong>
+    <div id="answer13" class="answer">Answer: </div>
+</div>
+
+<div class="question" onclick="handleQuestionClick(10)">
+    <strong>Question 14:</strong>
+    <div id="answer14" class="answer">Answer: </div>
+</div>
+
+
+
+<button class="show-all-button" onclick="showAllAnswers()">Show All Answers</button>
+<button class="unshow-all-button" onclick="unshowAllAnswers()">Hide All Answers</button>
+
+<a href="f4_byp.html" class="back-button">Back to F4 BYP</a>
+<a href="index.html" class="back-button">Back to home</a>
+
+<script>
+    // Define all answers in a single string variable
+    const allAnswers = "E,A,C,A,D,A,B,C,B,B,A,A,A,A";
+
+    // Split the string into an array
+    const answers = allAnswers.split(',');
+
+    function handleQuestionClick(questionNumber) {
+        const answerId = `answer${questionNumber}`;
+        const answer = document.getElementById(answerId);
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none'; // Hide if already shown
+        } else {
+            answer.innerText = `Answer: ${answers[questionNumber - 1]}`; // Set answer text
+            answer.style.display = 'block'; // Show answer
+        }
+    }
+
+    function showAllAnswers() {
+        for (let i = 0; i < answers.length; i++) {
+            const answerId = `answer${i + 1}`;
+            document.getElementById(answerId).innerText = `Answer: ${answers[i]}`;
+            document.getElementById(answerId).style.display = 'block';
+        }
+    }
+
+    function hideAllAnswers() {
+        for (let i = 0; i < answers.length; i++) {
+            document.getElementById(`answer${i + 1}`).style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
